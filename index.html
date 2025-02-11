@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Monitor</title>
+    <style>
+        /* Import Google Fonts for a modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://res.allmacwallpaper.com/pic/Thumbnails/19149_728.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Create an overlay to darken the background image */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        form#city-form {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+
+        form#city-form input[type="text"] {
+            flex: 1;
+            padding: 15px;
+            font-size: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        form#city-form input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        form#city-form button {
+            padding: 15px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background: #3498db;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        form#city-form button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #result {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+
+        #result h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        #result p {
+            font-size: 1.125rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        #result .error {
+            color: #e74c3c;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            form#city-form {
+                flex-direction: column;
+                padding: 20px;
+            }    
+            form#city-form input[type="text"] {
+                margin-bottom: 15px;
+            }    
+            form#city-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Air Quality Monitor</h1>
+
+    <form id="city-form">
+        <input type="text" id="city-input" placeholder="Enter city name" required>
+        <button type="submit">Check Air Quality</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function displayError(message) {
+            document.getElementById('result').innerHTML = `
+                <div class="error">${message}</div>
+            `;
+            setTimeout(() => document.getElementById('result').innerHTML = '', 3000);
+        }
+
+        function displayClearResult() {
+            document.getElementById('result').innerHTML = '';
+        }
+
+        document.getElementById('city-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const city = document.getElementById('city-input').value.trim();
+
+            if (city) {
+                fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(city)}&format=json&limit=1`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.length > 0) {
+                            const lat = data[0].lat;
+                            const lon = data[0].lon;
+                            const cName = data[0].display_name;
+
+                            fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=pm10,pm2_5,carbon_monoxide,dust,uv_index`)
+                                .then(response => {
+                                    if (response.ok) {
+                                        return response.json();
+                                    } else {
+                                        throw new Error(response.statusText);
+                                    }
+                                })
+                                .then(airQualityData => {
+                                    displayAirQuality(airQualityData, cName);
+                                })
+                                .catch(error => displayError(`Error fetching air quality data: ${error.message}`));
+                        } else {
+                            displayError('City not found.');
+                        }
+                    })
+                    .catch(error => displayError(`Error fetching city data: ${error.message}`));
+            } else {
+                displayError('Please enter a city name.');
+            }
+        });
+
+        function displayAirQuality(data, city) {
+            const pm25 = data.current.pm2_5;
+            const pm10 = data.current.pm10;
+            const co = data.current.carbon_monoxide;
+            const dust = data.current.dust;
+            const uvIndex = data.current.uv_index;
+
+            const pm25Range = getRange(pm25, [
+                { max: 12, condition: 'Good', color: 'green' },
+                { max: 35.4, condition: 'Moderate', color: 'yellow' },
+                { max: 55.4, condition: 'Unhealthy for Sensitive Groups', color: 'orange' },
+                { max: 150.4, condition: 'Unhealthy', color: 'red' },
+                { max: 250.4, condition: 'Very Unhealthy', color: 'purple' },
+                { max: Infinity, condition: 'Hazardous', color: 'maroon' }
+            ]);
+
+            const pm10Range = getRange(pm10, [
+                { max: 54, condition: 'Good', color: 'green' },
+                { max: 154, condition: 'Moderate', color: 'yellow' },
+                { max: 254, condition: 'Unhealthy for Sensitive Groups', color: 'orange' },
+                { max: 354, condition: 'Unhealthy', color: 'red' },
+                { max: 424, condition: 'Very Unhealthy', color: 'purple' },
+                { max: Infinity, condition: 'Hazardous', color: 'maroon' }
+            ]);
+
+            const coRange = getRange(co, [
+                { max: 400, condition: 'Good', color: '#4a871f' },
+                { max: 2000, condition: 'Fair', color: '#8b9400' },
+                { max: 4000, condition: 'Moderate', color: '#ffbf00' },
+                { max: 8000, condition: 'Unhealthy for Sensitive Groups', color: '#ff9900' },
+                { max: 12000, condition: 'Unhealthy', color: '#ff0000' },
+                { max: 25000, condition: 'Very Unhealthy', color: '#9c27b0' },
+                { max: Infinity, condition: 'Hazardous', color: '#b00000' }
+            ]);
+
+            const dustRange = getRange(dust, [
+                { max: 50, condition: 'Good', color: 'green' },
+                { max: 100, condition: 'Moderate', color: 'yellow' },
+                { max: 150, condition: 'Unhealthy for Sensitive Groups', color: 'orange' },
+                { max: 200, condition: 'Unhealthy', color: 'red' },
+                { max: 300, condition: 'Very Unhealthy', color: 'purple' },
+                { max: Infinity, condition: 'Hazardous', color: 'maroon' }
+            ]);
+
+            const uvIndexRange = getRange(uvIndex, [
+                { max: 2, condition: 'Low', color: 'green' },
+                { max: 5, condition: 'Moderate', color: 'yellow' },
+                { max: 7, condition: 'High', color: 'orange' },
+                { max: 10, condition: 'Very High', color: 'red' },
+                { max: Infinity, condition: 'Extreme', color: 'purple' }
+            ]);
+
+            let airQualityInfo = `
+                <h2>Air Quality in ${city}</h2>
+                <p><span class="icon">🌫️</span><strong>PM2.5:</strong> ${pm25} µg/m³ <span style="color: ${pm25Range.color}; font-weight: bold;">(${pm25Range.condition})</span></p>
+                <p><span class="icon">🌪️</span><strong>PM10:</strong> ${pm10} µg/m³ <span style="color: ${pm10Range.color}; font-weight: bold;">(${pm10Range.condition})</span></p>
+                <p><span class="icon">🔄</span><strong>CO:</strong> ${co} µg/m³ <span style="color: ${coRange.color}; font-weight: bold;">(${coRange.condition})</span></p>
+                <p><span class="icon">💨</span><strong>Dust:</strong> ${dust} <span style="color: ${dustRange.color}; font-weight: bold;">(${dustRange.condition})</span></p>
+                <p><span class="icon">☼️</span><strong>UV index:</strong> ${uvIndex} <span style="color: ${uvIndexRange.color}; font-weight: bold;">(${uvIndexRange.condition})</span></p>
+            `;
+            displayClearResult();
+            document.getElementById('result').innerHTML = airQualityInfo;
+        }
+
+        function getRange(value, ranges) {
+            for (let i = 0; i < ranges.length; i++) {
+                if (value <= ranges[i].max) {
+                    return ranges[i];
+                }
+            }
+            return { condition: 'Unknown', color: 'gray' }; 
+        }
+    </script>
+</body>
+</html>
