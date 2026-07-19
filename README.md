@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:2E9EF7&height=220&section=header&text=Shiv%20Kumar&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20%C2%B7%20Security%20%26%20Applied%20ML%20Tinkerer&descAlignY=58&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:2E9EF7&height=220&section=header&text=Shiv%20Kumar&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20%C2%B7%20Security%20and%20Applied%20ML%20Tinkerer&descAlignY=58&descSize=20" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=750&lines=Shipping+full-stack+products+end+to+end;Encrypting+files+client-side+with+the+Web+Crypto+API;Detecting+AI-generated+voices+across+5+Indian+languages;Building+at+2+AM+during+hackathons+%E2%80%94+and+winning;Currently%3A+cloud+architecture+%2B+AI-assisted+engineering" alt="Typing SVG" />
 
@@ -126,12 +126,14 @@ A dependency-free HTML tool that merges two uploaded images into a single collag
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AlphaCodec&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+<img height="165" src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/stats.svg" alt="GitHub Stats" />
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=AlphaCodec&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlphaCodec&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+<img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/top-langs.svg" alt="Top Languages" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=AlphaCodec&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophies" />
+<img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/trophies.svg" alt="Trophies" />
+
+<sub>Stats, Top Languages, and Trophies are pre-rendered by a GitHub Action and served as static files from this repo — this avoids the "Error Fetching Resource" / 402 errors the live public endpoints throw when they're overloaded. Refreshes daily; see setup note below.</sub>
 
 </div>
 
@@ -140,8 +142,6 @@ A dependency-free HTML tool that merges two uploaded images into a single collag
 ### 🐍 Contribution Snake
 
 <img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/github-contribution-grid-snake.svg" alt="Contribution Snake animation" />
-
-<sub>Animated automatically by a GitHub Action — see setup note below if it isn't rendering yet.</sub>
 
 </div>
 
