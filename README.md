@@ -1,29 +1,46 @@
 <div align="center">
 
-# Hi there, I'm Shiv Kumar 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:2E9EF7&height=220&section=header&text=Shiv%20Kumar&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Engineer%20%C2%B7%20Security%20%26%20Applied%20ML%20Tinkerer&descAlignY=58&descSize=20" width="100%"/>
 
-### Full-Stack Engineer · Cloud & Systems Enthusiast · Builder of Real-World Products
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=750&lines=Shipping+full-stack+products+end+to+end;Encrypting+files+client-side+with+the+Web+Crypto+API;Detecting+AI-generated+voices+across+5+Indian+languages;Building+at+2+AM+during+hackathons+%E2%80%94+and+winning;Currently%3A+cloud+architecture+%2B+AI-assisted+engineering" alt="Typing SVG" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+%7C+MERN+%2B+AWS;Building+ML-powered+products+end+to+end;From+Android+apps+to+CNN+classifiers;Always+shipping%2C+always+learning" alt="Typing SVG" />
+<br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![Followers](https://img.shields.io/github/followers/AlphaCodec?label=Follow&style=for-the-badge&color=2E9EF7&logoColor=white)](https://github.com/AlphaCodec)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shiv-kumar-35b059292)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shivkumar1582000@gmail.com)
-[![Profile Views](https://komarev.com/ghpvc/?username=BR1JM0H4N&color=2E9EF7&style=for-the-badge)](https://github.com/BR1JM0H4N)
+[![Open to Opportunities](https://img.shields.io/badge/Open%20to-Collaboration-success?style=for-the-badge)](mailto:shivkumar1582000@gmail.com)
+[![Profile Views](https://komarev.com/ghpvc/?username=AlphaCodec&color=2E9EF7&style=for-the-badge&label=Profile+Views)](https://github.com/AlphaCodec)
 
 </div>
 
----
+<br/>
+
+```bash
+shiv@engineering:~$ whoami
+> Full-stack developer who ships across the web, security, and applied-ML domains
+
+shiv@engineering:~$ cat interests.txt
+> Scalable web apps · Cloud architecture (AWS / GCP) · Network & security
+> AI-assisted / prompt-driven engineering · Full-stack systems design
+
+shiv@engineering:~$ ./status.sh
+> Currently building. Always learning. Rarely sleeping during hackathons.
+```
+
+<br/>
 
 ## 🧭 About Me
 
-I'm a full-stack engineer who enjoys taking products from a rough idea to a working, polished release — architecture, UI, backend, and deployment included. My work spans **web applications, Android development, and applied machine learning**, with a growing focus on **cloud-native systems on AWS and GCP**.
+I'm a full-stack engineer who likes taking an idea from a blank repo to something people can actually click on. My recent work spans **client-side cryptography, applied audio ML, full-stack event platforms, and hackathon-speed prototyping** — with a growing focus on **cloud-native systems (AWS, GCP)** and **AI-assisted engineering** as a force multiplier across the SDLC.
 
-- 🔭 Currently building **scalable web applications** and experimenting with **ML-powered products**
-- ☁️ Deepening my expertise in **cloud architecture (AWS, GCP)** and **network & security fundamentals**
-- 🧠 Interested in the emerging discipline of **AI-assisted / prompt-driven engineering** — using LLMs as a force multiplier across the SDLC
-- 🌱 Sharpening skills in distributed systems design and production-grade DevOps
-- 💬 Always open to collaborating on interesting, high-impact side projects
+- 🔭 Currently building **[Eventify](https://github.com/AlphaCodec/Eventify)** — a full-stack event management platform (React/Vite frontend + a dedicated [Node.js backend service](https://github.com/AlphaCodec/event_serv))
+- 🔐 Recently shipped a **zero-server, client-side encrypted file system** using the Web Crypto API and IndexedDB
+- 🎙️ Built a **multilingual AI-voice-detection REST API** for a hackathon — English, Hindi, Tamil, Telugu, and Malayalam
+- ☁️ Deepening my expertise in **AWS / GCP architecture** and **network & security fundamentals**
+- 🧠 Actively exploring **prompt-driven / AI-assisted engineering** as a way to move faster without cutting corners
+- 🏆 Competitive hackathon builder — Kalpathon @ BBDU, AI Voice Detection Challenge
+- 💬 Open to collaborating on interesting full-stack, security, or ML side projects
 
 ---
 
@@ -31,39 +48,17 @@ I'm a full-stack engineer who enjoys taking products from a rough idea to a work
 
 <div align="center">
 
-**Languages**
+<img src="https://skillicons.dev/icons?i=js,html,css,cpp,python,react,nodejs,express,mongodb,androidstudio,aws,gcp,git,github,vscode&theme=dark" />
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+</div>
 
-**Frontend**
+<div align="center">
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
-**Backend & APIs**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=fastapi&logoColor=white)
-
-**Data & ML**
-
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-
-**Cloud, DevOps & Tools**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+| Frontend | Backend | Data / ML | Cloud & Tools |
+|:---:|:---:|:---:|:---:|
+| React · HTML5 · CSS3 | Node.js · Express.js · REST APIs | MongoDB · Python · TensorFlow-adjacent audio ML | AWS · Google Cloud |
+| Vite | FastAPI (Python) | Librosa · NumPy · spaCy | Git · GitHub Actions |
+| Material 3 (Android) | Web Crypto API | SQLite | npm · Network & Security |
 
 </div>
 
@@ -71,44 +66,59 @@ I'm a full-stack engineer who enjoys taking products from a rough idea to a work
 
 ## 🚀 Featured Projects
 
-### 🌿 [PhytoScan](https://github.com/BR1JM0H4N) — AI Plant Disease Detection
-A production-style **Streamlit + TensorFlow** web app that classifies plant diseases from leaf images using a CNN trained on the PlantVillage dataset across **38 classes spanning 14 crop species**.
-- Built a green-pixel validation layer to reject non-plant images before inference
-- Designed a dynamic severity scoring engine combining disease base-risk with foliage loss metrics
-- Implemented a per-disease agronomic recommendation database
-- Decoupled session state for reliable, repeatable inference runs
+<table>
+<tr>
+<td width="50%" valign="top">
 
-`Python` `TensorFlow` `Streamlit` `Computer Vision` `CNN`
+### 🎟️ [Eventify](https://github.com/AlphaCodec/Eventify) + [event_serv](https://github.com/AlphaCodec/event_serv)
+**Full-stack event management platform** — split into a React/Vite frontend and a dedicated Node.js backend service, mirroring a real production service boundary rather than a monolith.
 
----
+`React` `Vite` `Node.js` `REST API`
 
-### 📦 [Zip2Share](https://github.com/BR1JM0H4N/Zip2Share) — Android File Compression Utility
-A native Android app (`com.mohan.zip2share`) that compresses and shares files as ZIP archives directly from the share sheet.
-- Modernized the UI with **Material 3** and dynamic color theming
-- Resolved crash-level bugs around directory sharing and duplicate filenames
-- Shipped multiple stable release iterations (v4.0 → v4.3), fixing dexer and API-compatibility issues
+**Status:** 🚧 In active development
 
-`Kotlin/Java` `Android SDK` `Material 3`
+</td>
+<td width="50%" valign="top">
 
----
+### 🎙️ [voice_analyst](https://github.com/AlphaCodec/voice_analyst)
+**AI-Generated Voice Detection API.** A secure FastAPI service that classifies Base64-encoded MP3 speech as human or AI-generated across **5 Indian languages**, using acoustic heuristics — pitch stability, spectral smoothness, and temporal variation — rather than language-specific models.
 
-### 🔎 OCR Application — Browser-Based Handwriting Recognition
-Rebuilt a broken OCR pipeline (originally misconfigured with a Chinese-language model) into a standalone, dependency-free HTML tool using **Tesseract.js (LSTM engine)**.
-- Added an image preprocessing pipeline: contrast enhancement, sharpening, Otsu binarization
-- Implemented confidence scoring, PSM mode selection, and batch processing
-- Delivered inline result editing for quick correction workflows
+`Python` `FastAPI` `Librosa` `NumPy`
 
-`JavaScript` `Tesseract.js` `Image Processing`
+**Status:** ✅ Built for the AI Voice Detection Hackathon
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 📚 Textbook Scan Merger — Client-Side Document Reconstruction
-A zero-backend browser tool that interleaves odd/even scanned pages from two source ZIPs back into correct reading order.
-- Drag-and-drop page reordering with duplicate-page detection
-- Client-side PDF generation via **jsPDF** and **JSZip**
-- Shipped as a single portable HTML file — no server, no install
+### 🔐 [Web-Based-EFS](https://github.com/AlphaCodec/Web-Based-EFS)
+**Client-side Encrypted File System Explorer.** Files are encrypted in-browser with **AES-GCM**, keys derived via **PBKDF2** with salted, high-iteration hashing, and stored as ciphertext-only in **IndexedDB** — nothing ever leaves the device unencrypted.
 
-`JavaScript` `jsPDF` `JSZip`
+`JavaScript` `Web Crypto API` `IndexedDB`
+
+**Status:** ✅ Complete — security coursework project
+
+</td>
+<td width="50%" valign="top">
+
+### 📄 [technocrats](https://github.com/AlphaCodec/technocrats)
+**Smart Resume Analyzer**, built with a 4-person team at **Kalpathon**, Babu Banarasi Das University. Parses resumes with spaCy, scores keyword relevance against job descriptions, and surfaces formatting feedback through a Streamlit interface.
+
+`Python` `spaCy` `Streamlit` `SQLite`
+
+**Status:** ✅ Hackathon build — Team Representative
+
+</td>
+</tr>
+</table>
+
+### 🖼️ [web2collage](https://github.com/AlphaCodec/web2collage) — Browser-Based Collage Creator
+A dependency-free HTML tool that merges two uploaded images into a single collage and reports the output file size in real time. **[→ Live demo](https://alphacodec.github.io/web2collage/)**
+
+`HTML` `Canvas API`
+
+> 📎 Also maintains [**AWS-ppt**](https://github.com/AlphaCodec/AWS-ppt) — hosted slides from an industrial AWS training session.
 
 ---
 
@@ -116,12 +126,33 @@ A zero-backend browser tool that interleaves odd/even scanned pages from two sou
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=BR1JM0H4N&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=BR1JM0H4N&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=AlphaCodec&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=AlphaCodec&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BR1JM0H4N&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlphaCodec&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+
+<img src="https://github-profile-trophy.vercel.app/?username=AlphaCodec&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophies" />
 
 </div>
+
+<div align="center">
+
+### 🐍 Contribution Snake
+
+<img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/github-contribution-grid-snake.svg" alt="Contribution Snake animation" />
+
+<sub>Animated automatically by a GitHub Action — see setup note below if it isn't rendering yet.</sub>
+
+</div>
+
+---
+
+## 🏆 Hackathons & Recognition
+
+| Event | Project | Role |
+|---|---|---|
+| **Kalpathon** — Babu Banarasi Das University | Smart Resume Analyzer (`technocrats`) | Team Representative, 4-person team |
+| AI Voice Detection Hackathon Challenge | Multilingual AI-voice-detection API (`voice_analyst`) | Solo build |
 
 ---
 
@@ -131,10 +162,10 @@ A zero-backend browser tool that interleaves odd/even scanned pages from two sou
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shiv-kumar-35b059292)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shivkumar1582000@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BR1JM0H4N)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AlphaCodec)
 
 </div>
 
-<div align="center">
-<i>"Ship it, measure it, improve it." — always building.</i>
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E9EF7,100:0F2027&height=100&section=footer" width="100%"/>
+
+<div align="center"><i>"Ship it, measure it, improve it." — always building.</i></div>
