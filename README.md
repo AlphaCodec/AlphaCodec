@@ -129,12 +129,6 @@ A dependency-free HTML tool that merges two uploaded images into a single collag
 <img height="165" src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/stats.svg" alt="GitHub Stats" />
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=AlphaCodec&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
-<img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/top-langs.svg" alt="Top Languages" />
-
-<img src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/trophies.svg" alt="Trophies" />
-
-<sub>Stats, Top Languages, and Trophies are pre-rendered by a GitHub Action and served as static files from this repo — this avoids the "Error Fetching Resource" / 402 errors the live public endpoints throw when they're overloaded. Refreshes daily; see setup note below.</sub>
-
 </div>
 
 <div align="center">
