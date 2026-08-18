@@ -126,7 +126,6 @@ A dependency-free HTML tool that merges two uploaded images into a single collag
 
 <div align="center">
 
-<img height="165" src="https://raw.githubusercontent.com/AlphaCodec/AlphaCodec/output/stats.svg" alt="GitHub Stats" />
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=AlphaCodec&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
 </div>
